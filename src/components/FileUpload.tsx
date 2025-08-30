@@ -39,7 +39,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload, isLoading 
   });
 
   const removeFile = () => {
-    acceptedFiles.length = 0;
+    acceptedFiles.Length = 0;
     setUploadError(null);
   };
 
@@ -91,6 +91,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload, isLoading 
                   removeFile();
                 }}
                 className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                title="Remove file"
               >
                 <X className="h-4 w-4 text-gray-500" />
               </button>
